@@ -1,0 +1,65 @@
+body{
+  // background: linear-gradient(#012C30,#337F88 95%);
+  background: #012C30;
+  // background: #55AF9D;
+  margin: 0;
+  padding:0;
+  opacity: 1;
+}
+
+#menu{
+  // height: 100vh;
+  // background-image: url(../img/fondo1.jpg);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  img{
+    width: 75%;
+    margin-left: 5vh;
+    margin-top: -15vh;
+  } button{
+    width: 35vh;
+    height: 35vh;
+    padding: 1vh;
+    margin:0;
+    transform: rotate(45deg);
+    border-radius: 2vh;
+  }h4{
+    transform: rotate(315deg);
+    color: #fff;
+  }.rojo{
+    background: #901A1C;
+    border: 2vh solid#901A1C;
+    margin-left:3.1vh;
+  }.azulUno{
+    background: #55AF9D;
+    border: 2vh solid#55AF9D;
+    margin-left: 4vh;
+  }.rosaContorno{
+    margin-left:4.5vh;
+    border: 1vh solid#CE4B52;
+    background:none;
+  }.azulDos{
+    margin-top:-13vh;
+    margin-left:-4.7vh;
+    background: #8FC2CE;
+    border: 2vh solid#8FC2CE;
+  }.rosaDos{
+    // padding-top:vh;
+    margin-top:12.5vh;
+    margin-left: -29vh;
+    background: #CE4B52;
+    border: 1vh solid#CE4B52;
+  }.rosasAbajo{
+    margin-left:29.3vh;
+    margin-top:-13vh;
+  }
+}
+
+#aboutMe{
+  .franjaUno{
+    width: 125vh;
+    height: 40vh;
+    background: #CE4B52;
+    // transform: rotate(325deg);
+  }
+}
