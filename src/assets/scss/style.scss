@@ -1,65 +1,326 @@
+@import "variables";
+
 body{
   // background: linear-gradient(#012C30,#337F88 95%);
-  background: #012C30;
+  // background: #012C30;
   // background: #55AF9D;
+  background-image: url(../img/fondo2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   margin: 0;
   padding:0;
   opacity: 1;
 }
 
 #menu{
-  // height: 100vh;
-  // background-image: url(../img/fondo1.jpg);
-  // background-repeat: no-repeat;
-  // background-size: cover;
+  height: 100vh;
   img{
     width: 75%;
     margin-left: 5vh;
     margin-top: -15vh;
-  } button{
+  } .botonesMenu{
     width: 35vh;
     height: 35vh;
     padding: 1vh;
     margin:0;
     transform: rotate(45deg);
-    border-radius: 2vh;
+    border-radius: 1vh;
   }h4{
     transform: rotate(315deg);
     color: #fff;
   }.rojo{
-    background: #901A1C;
-    border: 2vh solid#901A1C;
+    background: none;
+    // background: #901A1C;
+    border: 1vh solid$red-color;
     margin-left:3.1vh;
+    &:hover{
+        background: $red-color;
+    }
   }.azulUno{
-    background: #55AF9D;
-    border: 2vh solid#55AF9D;
+    background: none;
+    // background: #55AF9D;
+    border: 1vh solid$blueOne-color;
     margin-left: 4vh;
+    &:hover{
+        background:$blueOne-color;
+    }
   }.rosaContorno{
     margin-left:4.5vh;
-    border: 1vh solid#CE4B52;
+    border: 1vh solid$pink-color;
     background:none;
+    &:hover{
+      background: $pink-color;
+    }
   }.azulDos{
     margin-top:-13vh;
     margin-left:-4.7vh;
-    background: #8FC2CE;
-    border: 2vh solid#8FC2CE;
+    background: none;
+    // background: #8FC2CE;
+    border: 1vh solid$blueTwo-color;
+    &:hover{
+      background:$blueTwo-color;
+    }
   }.rosaDos{
     // padding-top:vh;
     margin-top:12.5vh;
     margin-left: -29vh;
-    background: #CE4B52;
-    border: 1vh solid#CE4B52;
+    background: none;
+    border: 1vh solid$pink-color;
+    &:hover{
+      background:$pink-color;
+    }
   }.rosasAbajo{
-    margin-left:29.3vh;
+    margin-left:28.8vh;
     margin-top:-13vh;
   }
 }
 
 #aboutMe{
-  .franjaUno{
-    width: 125vh;
-    height: 40vh;
-    background: #CE4B52;
-    // transform: rotate(325deg);
+  background-image:url(../img/fondoFranjas.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 22vh;
+  width: 100%;
+  height: 180vh;
+  border-radius: 5px;
+  #aboutImage{
+    width: 100%;
+    margin-left: 55vh;
+    margin-top:15vh;
+  }#presentation{
+    width: 100%;
+    margin-top: 45vh;
+    margin-left: 100vh;
+    color: #fff;
+    font-family: $font-family;
+  }#paragraphPresentation{
+    // opacity: .5;
+    text-align: center;
+    color: #fff;
+    font-family: $font-family;
+    font-size: 2.1vh;
+    transform: rotate(-45deg);
+   }
+  .imagenMusica{
+    margin-top: -27vh;
+    margin-left: 15vh;
+    width: 100%;
+  }.imagenCine{
+    width: 100%;
+    margin-left: 43vh;
+  }
+  .parrafoPresentacion{
+    width: 57vh;
+    height: 57vh;
+    margin-top: -60vh;
+    margin-left:-7vh;
+    margin-right: 5vh;
+    padding: 2vh;
+    // background: #000;
+    transform: rotate(45deg);
+  }.hobbies{
+    width: 100%;
+    margin-left:15vh;
+    margin-top: -10vh;
+  }
+  // margin-top: 25vh;
+  // .franjaUno{
+  //   margin-top:10vh;
+  //   margin-left: -5vh;
+  //   margin-right: 0;
+  //   width: 105%;
+  //   height: 80vh;
+  //   background: #8FC2CE;
+  //   // background: #012C30;
+  //   z-index: -1;
+  //   // background: #CE4B52;
+  //   transform: skew(0deg,-5deg);
+  }
+  //.botonMovil{
+  //   width: 15vh;
+  //   height: 15vh;
+  //   padding: 1vh;
+  //   margin-top: -15vh;
+  //   transform: rotate(45deg);
+  //   border-radius: 1vh;
+  //}
+
+
+
+.menu {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  text-align:center;
+  border-radius: 100%;
+  right:25px;
+  top:25px;
+}
+.menu-bg {
+  @extend .menu;
+  background: #663399;
+  pointer-events: none;
+  transition: .3s;
+  right:50px;
+  top:50px;
+  transform:translate3d(50%,-50%,0);
+  transform-origin: center center;
+  &.fs{
+    transform:translate3d(50%,-50%,0);
+    width:300vw;
+    height:300vw;
+  }
+}
+.menu-burger {
+  @extend .menu;
+  color: white;
+  padding-top: 11px;
+  -webkit-user-select: none;
+  cursor: pointer;
+  transition: .4s;
+  transform-origin: center;
+  &.fs {
+    transform: rotate(-180deg) translateY(10px);
+  }
+}
+.menu-items{
+  position:absolute;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing:10px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  opacity:0;
+  transition: .4s;
+  margin-top:100px;
+  transform: translateY(-200%);
+  pointer-events:none;
+  div {
+    transition: 1s;
+    opacity: 0;
+    margin-top: 0px;
+  }
+  &.fs {
+    transform: translateY(0);
+    pointer-events:auto;
+    opacity: 1;
+    div{
+      opacity: 1;
+      margin-top: 75px;
+    }
+  }
+}
+
+.content {
+  padding:100px 50px;
+  line-height: 1.62em;
+  color:#444;
+  h1{
+    font-weight:bold;
+    font-size:2em;
+    margin-bottom: 1em;
+  }
+}
+
+#portafolio{
+  margin-top: -30vh;
+  .franjaDos{
+    margin-top:10vh;
+    padding-top: 10vh;
+    width: 100%;
+    background: #c68d93;
+    border-radius: 5px;
+    z-index: -1;
+    // transform: skew(0deg,-5deg);
+  }#portafolioImage{
+    width: 78%;
+    margin-top: 20vh;
+    margin-left: 28vh;
+  }#tarjetaTres{
+    width: 96.5%;
+    margin-top: -35vh;
+    margin-left: 2vh;
+  }#tarjetaCuatro{
+    width: 96.5%;
+  }#tituloProyectosWeb{
+    margin-left: 12vh;
+    margin-top: -15vh;
+    color:$white-color;
+  }.menuPortafolio{
+    width: 50%;
+    height: 30vh;
+    background: $blueTwo-color;
+    transform: skew(0deg,45deg);
+    float: left;
+  }.produccion{
+    width: 50%;
+    height: 30vh;
+    background: $blueOne-color;
+    transform: skew(0deg,-45deg);
+    float: right;
+  }.contenedorFranjas{
+    background-image: url(../img/fondoFranjasDos.png);
+    margin-top: -20vh;
+    width:100%;
+    height: 100vh;
+  }.servicios{
+    width:50%;
+    background: none;
+    border: none;
+  }.imagenBoton{
+    width:50%;
+  }.botonFront{
+    margin-top:10vh;
+    margin-left:-1vh;
+  }.botonProduccion{
+    margin-top:32vh;
+    margin-left: -30vh;
+  }.tituloServicios{
+    width: 25%;
+    margin-left: -12vh;
+    margin-top:43vh;
+  }
+}
+
+// #aboutMe{
+  // background-image:url(../img/fondoFranjas.png);
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // margin-top: 22vh;
+  // width: 100%;
+  // height: 170vh;
+  // border-radius: 5px;
+  // transform: skew(0deg,-5deg);
+// }.botonFoto{
+//   width: 15vh;
+//   height: 15vh;
+//   transform: rotate(45deg);
+//   background-image:url(../img/foto2.jpg);
+// }
+
+#produccionAudiovisual{
+  background: $pink-color;
+  padding:10vh;
+  border-radius: 5px;
+}
+
+#skills{
+  width: 100%;
+  .tituloSkills{
+    width:18%;
+    margin-top: 20vh;
+    margin-left: 68vh;
+  }.imagenUnoSkills{
+    width: 45%;
+    margin-top: -15vh;
+    margin-left: 17vh;
+  }.imagenDosSkills{
+    width: 45%;
+    margin-top: -15vh;
+    margin-left: -10vh;
+
   }
 }
