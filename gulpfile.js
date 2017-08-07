@@ -1,6 +1,8 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var connect = require("gulp-connect");
 var browserSync = require('browser-sync').create();
+
 
 var rutas = {
   html: './src/*.html',
@@ -42,7 +44,14 @@ gulp.task('js-watch',['JS'], function(done){
   browserSync.reload();
   done();
 })
+gulp.task('serveprod', function() {
+ connect.server({
+   root: "./public/",
+   port: process.env.PORT || 5000, // localhost:5000
+   livereload: false
+ });
 
+});
 //para leavantar el servidor
 gulp.task('serve', function(){
   browserSync.init({

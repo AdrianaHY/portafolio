@@ -9,7 +9,8 @@
   "author": "AdrianaHY",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "gulp-connect": "^5.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
