@@ -9,11 +9,12 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
     <!-- <link rel="stylesheet" href="../assets/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="../assets/css/animate.css">
     <link rel="stylesheet" href="../assets/css/style.css">
   </head>
   <body>
 
-          <section  class="container-fluid" id="menu">
+          <section  class="container-fluid hide-on-med-and-down" id="menu">
             <div class="row">
               <div class="col s12">
                   <div class="col s3 offset-s3">
@@ -49,28 +50,53 @@
             </div>
           </section>
 
-          <section id="aboutMe">
-            <!-- <div class="row" >
-              <div class="col s8 ">
-                <img src="../assets/img/foto1.png" alt="foto1" >
-              </div>
-              <div class="col s4">
-                <button class="botonFoto"></button>
-              </div>
-            </div> -->
+          <!-- seccion menu responsive -->
+
+          <section id="menuResponsive" class="hide-on-large-only">
+            <div class="row">
+              <img src="../assets/img/logo.png" alt="logoResponsive" class="col s12 center-align logoResponsive">
+            </div>
+            <div  class="open row">
+              <span class="cls"></span>
+              <span>
+                  <ul class="sub-menu ">
+                      <li>
+                          <a href="index.html#aboutResponsive" title="about">Acerca de mi</a>
+                      </li>
+                      <li>
+                          <a href="index.html#skillsResponsive" title="skills">Skills</a>
+                      </li>
+                      <li>
+                          <a href="index.html#portafolioResponsive" title="jobs">Portafolio</a>
+                      </li>
+                      <li>
+                          <a href="index.html#contacto" title="contact">Contacto</a>
+                      </li>
+                  </ul>
+              </span>
+              <span class="cls"></span>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <h3 id="presentationMobile"></h3>
+            </div>
+          </div>
+          </section>
+
+          <section id="aboutMe" class="hide-on-med-and-down">
             <div class="container" >
               <div class="row">
-                <div class="col s12 m6">
+                <div class="col s12 m6 wow bounceInLeft">
                   <img src="../assets/img/white-acercademi.png" alt="about" id="aboutImage">
                 </div>
               </div>
               <div class="row">
                 <div class="col s6 m6">
-                  <h3 id="presentation"></h3>
+                  <h2 id="presentation"></h2>
                 </div>
               </div>
               <div class="row">
-                <div class="col s6 m6 parrafoPresentacion">
+                <div class="col s6 m6 parrafoPresentacion wow bounceInLeft">
                   <p id="paragraphPresentation">
                     Descubrí el arte del código por una buena jugada del destino
                     y ¡me encantó!, ahora soy front-end developer, diseñadora
@@ -84,120 +110,114 @@
               </div>
               <div class="row">
                 <div class="col s12 ">
-                  <img src="../assets/img/hobbies.png" alt="hobbies" class="hobbies">
+                  <img src="../assets/img/hobbies.png" alt="hobbies" class="hobbies wow bounceInRight">
                 </div>
               </div>
             </div>
           </section>
 
-            <!-- posible seccion de about me en responsive -->
-          <!-- <section id="" > -->
-                <!-- <div class="franjaUno container" >
-                  <div class="row">
-                    <div class="col s6">
-                      <img src="../assets/img/aboutme.png" alt="about" id="aboutImage">
-                    </div>
-                    <div class="col s6">
-                      <p id="paragraphPresentation">
-                        Descubrí el arte del código por una buena jugada del destino
-                        y ¡me encantó!, ahora soy front-end developer, diseñadora
-                        gráfica por convicción y cantante por diversión.
-                        <br> <br>
-                        Me gusta el cine y el arte en general, estoy convencida
-                        que todo el conocimiento adquirido puede enfocarse a crear
-                        un impacto social.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col s6">
-                      <h3 id="presentation"></h3>
-                    </div>
-                  </div>
-                </div> -->
-                <!-- <div class="container">
-                  <div class="menu-bg"></div>
-                    <div class="menu-burger">☰</div>
-                    <div class="menu-items">
-                      <div>about me</div>
-                      <div>portfolio</div>
-                      <div>contacto</div>
-                    </div>
-                 </div> -->
-            <!-- </div>
-          </section> -->
+              <!-- seccion de about me en responsive  -->
+          <section id="aboutResponsive" class="show-on-medium-and-down hide-on-med-and-up container" >
+             <div class="franjaUno " >
+              <div class="row">
+                <div class="col s12">
+                  <img src="../assets/img/white-acercademi.png" alt="about" id="aboutImageResponsive" class="responsive-img wow bounceInLeft">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12" id="paragraphPresentationMobile">
+                  <p >
+                    Descubrí el arte del código por una buena jugada del destino
+                    y ¡me encantó!, ahora soy front-end developer, diseñadora
+                    gráfica por convicción y cantante por diversión.
+                    <br> <br>
+                    Me gusta el cine y el arte en general, estoy convencida
+                    que todo el conocimiento adquirido puede enfocarse a crear
+                    un impacto social.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  <img src="../assets/img/hobbiesResponsive.png" alt="about" id="hobbiesResponsive" class="wow bounceInRight">
+                </div>
+              </div>
+            </div>
+          </section>
 
-          <section id="portafolio" class="container">
+          <!-- seccion de portafolio desktop -->
+
+          <section id="portafolio" class="container show-on-large hide-on-med-and-down">
             <div class="row">
               <div class="col s12 m6">
-                <img id="portafolioImage" src="../assets/img/portafolio.png" alt="portafolio" class="col s12">
+                <img id="portafolioImage" src="../assets/img/portafolio.png" alt="portafolio" class="col s12 wow bounceInLeft">
               </div>
             </div>
             <div class="row contenedorFranjas">
-              <button class=" col s4 m4  servicios botonFront"><img src="../assets/img/frontend.png" alt="servicio1" class="imagenBoton"></button>
-              <button class=" col s4 m4  servicios botonProduccion"><img src="../assets/img/produccion.png" alt="servicio2" class="imagenBoton"></button>
+              <button class=" col s4 m4  servicios botonFront"><a href="index.html#proyectosWeb"><img src="../assets/img/frontend.png" alt="servicio1" class="imagenBoton"></a></button>
+              <button class=" col s4 m4  servicios botonProduccion"><a href="index.html#produccionAudiovisual"><img src="../assets/img/produccion.png" alt="servicio2" class="imagenBoton"></a></button>
               <img src="../assets/img/servicios.png" alt="servicios" class="col s4 m4 tituloServicios">
             </div>
-            <div class="franjaDos row">
+            <div class="franjaDos row" id="proyectosWeb">
               <div class="col s12">
-                <div class="col s6">
+                <div class="col s6 wow bounceInLeft">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="../assets/img/paseante.jpg">
+                      <img class="activator" src="../assets/img/paseante.png">
                     </div>
                     <div class="card-content">
                       <span class="card-title activator grey-text text-darken-4">PASSEANTE<i class="material-icons right">more_vert</i></span>
-                      <p><a href="#"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></p>
+                      <p><a href="https://github.com/AdrianaHY/passeante.git" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></p>
                     </div>
                     <div class="card-reveal">
                       <span class="card-title grey-text text-darken-4">PASSEANTE<i class="material-icons right">close</i></span>
-                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                      <p>Proyecto ganador realizado para hackaton interno de laboratoria. Aplicación que facilita el acceso al transporte colectivo.</p>
                     </div>
                   </div>
                 </div>
-                <div class="col s6">
+                <div class="col s6 wow bounceInRight">
                   <div class="card large">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="../assets/img/applove.jpg">
                     </div>
                     <div class="card-content">
                       <span class="card-title activator grey-text text-darken-4">APP LOVE<i class="material-icons right">more_vert</i></span>
-                      <p><a href="#"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></p>
+                      <p><a href="https://github.com/AdrianaHY/appLove.git" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></p>
                     </div>
                     <div class="card-reveal">
                       <span class="card-title grey-text text-darken-4">APP LOVE<i class="material-icons right">close</i></span>
-                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                      <p>Proyecto de maquetación utilizando el sistema de grid.</p>
                     </div>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col s6">
+                  <div class="col s6 wow bounceInLeft">
                     <div id="tarjetaTres"class="card medium">
                       <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="../assets/img/barrigallena.jpg">
+                        <img class="activator" src="../assets/img/yape.png">
                       </div>
                       <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">BARRIGA LLENA<i class="material-icons right">more_vert</i></span>
-                        <p><a href="#"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></p>
+                        <span class="card-title activator grey-text text-darken-4">YAPE<i class="material-icons right">more_vert</i></span>
+                        <p><a href="https://github.com/AdrianaHY/yape.git" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></p>
                       </div>
                       <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">BARRIGA LLENA<i class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        <span class="card-title grey-text text-darken-4">YAPE<i class="material-icons right">close</i></span>
+                        <p>Proyecto realizado con gulp y sass, réplica de aplicación hecha en Perú.</p>
                       </div>
                     </div>
                   </div>
-                  <div class="col s6">
+                  <div class="col s6 wow bounceInRight">
                     <div id="tarjetaCuatro"class="card small">
                       <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="../assets/img/listaContactos.jpg">
+                        <img class="activator" src="../assets/img/promises.jpg">
                       </div>
                       <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">LISTA DE CONTACTOS<i class="material-icons right">more_vert</i></span>
-                        <p><a href="#"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></p>
+                        <span class="card-title activator grey-text text-darken-4">PROMISES<i class="material-icons right">more_vert</i></span>
+                        <p><a href="https://github.com/AdrianaHY/promises-planetas.git" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></p>
                       </div>
                       <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">LISTA DE CONTACTOS<i class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        <span class="card-title grey-text text-darken-4">PROMISES<i class="material-icons right">close</i></span>
+                        <p>Página para practicar promesas, maquetación y uso de la librería fetch.</p>
                       </div>
                     </div>
                   </div>
@@ -211,61 +231,196 @@
             </div>
           </section>
 
-          <section class="container" id="produccionAudiovisual">
+          <!-- seccion de portafolio responsive -->
+          <section class="container show-on-medium-and-down hide-on-large-only" id="portafolioResponsive">
             <div class="row">
-              <div class="col s6 m6">
+              <div class="col s12">
+                <img id="portafolioImageResponsive" src="../assets/img/portafolio.png" alt="portafolio" class="col s12 wow bounceInLeft">
+              </div>
+            </div>
+            <div class="row contenedorFranjasResponsive">
+              <img src="../assets/img/servicios.png" alt="servicios" class="col s4 serviciosResponsive">
+            </div>
+            <div class="proyectosProgramacion">
+              <div class="row ">
+                <div class="col s12">
+                  <h4 id="tituloProyectosWeb"><span><</span>proyectosWeb<span>></span></h4>
+                </div>
+              </div>
+              <div class="row wow bounceInRight">
+                <div class=" col s12">
+                  <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="../assets/img/paseante.png">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">PASSEANTE<i class="material-icons right">more_vert</i></span>
+                      <p><a href="https://github.com/AdrianaHY/passeante.git" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">PASSEANTE<i class="material-icons right">close</i></span>
+                      <p>Proyecto ganador realizado para hackaton interno de laboratoria. Aplicación que facilita el acceso al transporte colectivo.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row wow bounceInLeft">
+                <div class= "col s12">
+                  <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="../assets/img/applove.jpg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">APP LOVE<i class="material-icons right">more_vert</i></span>
+                      <p><a href="https://github.com/AdrianaHY/appLove.git" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">APP LOVE<i class="material-icons right">close</i></span>
+                      <p>Proyecto de maquetación utilizando el sistema de grid.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row wow bounceInRight">
+                <div class="col s12">
+                  <div id="tarjetaTres"class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="../assets/img/yape.png">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">YAPE<i class="material-icons right">more_vert</i></span>
+                      <p><a href="https://github.com/AdrianaHY/yape.git" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">YAPE<i class="material-icons right">close</i></span>
+                      <p>Proyecto realizado con gulp y sass, réplica de aplicación hecha en Perú.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row wow bounceInLeft">
+                <div class="col s12">
+                  <div id="tarjetaCuatro"class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="../assets/img/promises.jpg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">PROMISES<i class="material-icons right">more_vert</i></span>
+                      <p><a href="https://github.com/AdrianaHY/promises-planetas.git" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">PROMISES<i class="material-icons right">close</i></span>
+                      <p>Página para practicar promesas, maquetación y uso de la librería fetch.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="proyectosProduccion">
+              <div class="row">
+                <div class="col s12">
+                  <img src="../assets/img/camarita.png" alt="camara" class="camaraResponsive wow bounceInLeft">
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col s12">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/i1cqtRc6pS4" frameborder="0" allowfullscreen class="col s12 m12"></iframe>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/sU3PZ672tIQ" frameborder="0" allowfullscreen class="col s12 m12"></iframe>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/pCy8MApLJJs" frameborder="0" allowfullscreen class="col s12 m12"></iframe>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/dxmX8Oh-Jg0" frameborder="0" allowfullscreen class="col s12 m12"></iframe>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- seccion produccion desktop -->
+          <section class="container show-on-large hide-on-med-and-down" id="produccionAudiovisual">
+            <div class="row">
+              <div class="col s12 m6 ">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/i1cqtRc6pS4" frameborder="0" allowfullscreen class="col s12 m12"></iframe>
               </div>
-              <div class="col s6 m6">
+              <div class="col s12 m6 ">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/sU3PZ672tIQ" frameborder="0" allowfullscreen class="col s12 m12"></iframe>
               </div>
             </div>
             <div class="row">
-              <div class="col s12 m12">
-                <img src="../assets/img/camarita.png" alt="camara" class="camaraProduccion ">
+              <div class="col s12 m12 responsive-img">
+                <img src="../assets/img/camarita.png" alt="camara" class="camaraProduccion wow bounceInLeft">
                 <p class="parrafoProduccion col s12 m12">
                 </p>
               </div>
             </div>
             <div class="row">
-              <div class="col s6 m6">
+              <div class="col s12 m6 ">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/pCy8MApLJJs" frameborder="0" allowfullscreen class="col s12 m12"></iframe>
               </div>
-              <div class="col s6 m6">
+              <div class="col s12 m6 ">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/dxmX8Oh-Jg0" frameborder="0" allowfullscreen class="col s12 m12"></iframe>
               </div>
             </div>
           </section>
 
-          <section class="container" id="skills">
+          <!-- seccion desktop skills -->
+          <section class="container show-on-large hide-on-med-and-down wow bounceInLeft" id="skills">
             <div class="row">
-              <img src="../assets/img/skills.png" alt="tituloSkills" class="col s12 m12 tituloSkills">
+              <div class="col m12">
+                  <img src="../assets/img/skills.png" alt="tituloSkills" class="col s6 m12 tituloSkills responsive-img">
+              </div>
             </div>
             <div class="row">
-              <img src="../assets/img/skillsCompletas.png" alt="skillsUno" class= "col s12 m12 imagenUnoSkills">
+              <img src="../assets/img/skillsCompletas.png" alt="skillsUno" class= "col s12 m12 imagenUnoSkills wow bounceInRight">
             </div>
           </section>
 
-          <footer>
-            <div class="container contactos" id="contacto">
+          <!-- seccion mobile skills -->
+          <section class="containershow-on-medium-and-down hide-on-large-only wow bounceInLeft" id="skillsResponsive">
+            <div class="row">
+              <div class="col s12">
+                  <img src="../assets/img/skills.png" alt="tituloSkills" class="col s12 responsive-img skillsTitle center-align">
+              </div>
+            </div>
+            <div class="row wow bounceInRight">
+              <div class="col s12">
+                  <img src="../assets/img/skillsMobile.png" alt="imagenSkills" class="col s12 responsive-img center-align">
+              </div>
+            </div>
+          </section>
+
+          <!-- contacto para desktop  y mobile-->
+
+          <footer class="show-on-large">
+            <div class="container contactos " id="contacto">
               <div class="row">
-                <div class="col s12 offset-s4 col m12">
-          					<h3 class="textoContacto">¡Contáctame!</h3>
-                    <p class="textoContacto">Juntos podremos lograr cosas increíbles</p>
+                <div class="col s12 col m12">
+          					<h3 class="textoContacto wow bounceInDown">¡Contáctame!</h3>
+                    <p class="textoContacto wow bounceInUo">Juntos podremos lograr cosas increíbles</p>
                 </div>
               </div>
-              <div class="row">
+              <div class="row wow tada">
                 <div class="col s12 m12">
-                  <a href="mailto:adriana.herya@gmail.com" class="col s2 m2 linksContacto"><i class="fa fa-envelope fa-4x" aria-hidden="true"></i></a>
-                  <a href="https://github.com/AdrianaHY" class="col s2 m2 linksContacto" target="_blank">  <i class="fa fa-github fa-4x" aria-hidden="true"></i></a>
-                  <a href="https://api.whatsapp.com/send?phone=525540271944" class="col s2 m2 linksContacto">  <i class="fa fa-whatsapp fa-4x" aria-hidden="true"></i></a>
-                  <a href="#" class="col s2 m2 linksContacto">  <i class="fa fa-map-marker fa-4x" aria-hidden="true"></i></a>
-                  <a href="#" class="col s2 m2 linksContacto">  <i class="fa fa-linkedin fa-4x" aria-hidden="true"></i></a>
-                  <a href="assets/img/AdrianaHernandez.pdf" download="CV-Adriana" class="col s2 m2 linksContacto">  <i class="fa fa-download fa-4x" aria-hidden="true"></i></a>
+                  <a href="mailto:adriana.herya@gmail.com" class="col s1  m2 linksContacto" target="_blank"><i class="fa fa-envelope fa-4x" aria-hidden="true"></i></a>
+                  <a href="https://github.com/AdrianaHY" class="col s1 offset-s2 m2 linksContacto" target="_blank">  <i class="fa fa-github fa-4x" aria-hidden="true"></i></a>
+                  <a href="https://api.whatsapp.com/send?phone=525540271944" class="col s1 offset-s1 m2 linksContacto" target="_blank">  <i class="fa fa-whatsapp fa-4x" aria-hidden="true"></i></a>
+                  <a href="https://www.linkedin.com/in/adriana-hern%C3%A1ndez-ab5708146/" class="col s1 offset-s1 m2 linksContacto" target="_blank">  <i class="fa fa-linkedin fa-4x" aria-hidden="true"></i></a>
+                  <a href="./assets/img/MEX20171126-LuzAdrianaHernandezYañez.pdf" download="CV-Adriana" class="col s1 offset-s2 m2 linksContacto" target="_blank"><i class="fa fa-download fa-4x" aria-hidden="true"></i></a>
                 </div>
               </div>
             </div>
           </footer>
+
+
 
 
 
@@ -274,6 +429,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
     <script src="https://use.fontawesome.com/f41a3efa6b.js"></script>
     <!-- <script src="./assets/js/jquery.min.js"></script> -->
+    <script src="./assets/js/wow.min.js"></script>
     <script src="./assets/js/app.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
