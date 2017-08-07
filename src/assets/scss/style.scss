@@ -49,7 +49,7 @@ body{
     }
   }.azulDos{
     margin-top:-13vh;
-    margin-left:-5.5vh;
+    margin-left:-4.9vh;
     background: none;
     // background: #8FC2CE;
     border: 1vh solid$blueTwo-color;
@@ -58,15 +58,15 @@ body{
     }
   }.rosaDos{
     // padding-top:vh;
-    margin-top:15vh;
-    margin-left: -32vh;
+    margin-top:12.3vh;
+    margin-left: -29vh;
     background: none;
     border: 1vh solid$pink-color;
     &:hover{
       background:$pink-color;
     }
   }.rosasAbajo{
-    margin-left:30.5vh;
+    margin-left:28.5vh;
     margin-top:-13vh;
   }
 }
@@ -84,10 +84,10 @@ body{
     margin-left: 55vh;
     margin-top:15vh;
   }#presentation{
-    width: 100%;
+    width: 90%;
     margin-top: 45vh;
     margin-left:90vh;
-    font-size: 7vh;
+    font-size: 5vh;
     color: #fff;
     font-family: $font-family;
   }#paragraphPresentation{
