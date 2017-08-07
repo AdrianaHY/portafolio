@@ -44,6 +44,7 @@ gulp.task('js-watch',['JS'], function(done){
   browserSync.reload();
   done();
 })
+
 gulp.task('serveprod', function() {
  connect.server({
    root: "./public/",
