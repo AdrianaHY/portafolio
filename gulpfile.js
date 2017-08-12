@@ -61,7 +61,7 @@ gulp.task('serve', function(){
     }
   });
   //para revisar los cambios y actualizar
-  gulp.watch(rutas.html, ['html-watch']);
-  gulp.watch(rutas.scss, ['css-watch']);
-  gulp.watch(rutas.js['js-watch']);
+  gulp.watch(rutas.html, ['HTML','html-watch']);
+  gulp.watch(rutas.scss, ['CSS','css-watch']);
+  gulp.watch(rutas.js[ 'JS','js-watch']);
 });
