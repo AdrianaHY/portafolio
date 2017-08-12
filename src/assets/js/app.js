@@ -2,7 +2,7 @@
 var cargarPagina = function(){
   menuResponsivo();
   typing();
-  
+
 };
 var menuResponsivo = function() {
         $(document).delegate('.open', 'click', function(event){
@@ -35,6 +35,13 @@ var typing= function(){
     });
 
     $('#tituloProyectosWeb').typeIt({
+             strings: ["<proyectosWeb>", "programación"],
+             speed: 50,
+             breakLines: false,
+             loop:true
+    });
+
+    $('#tituloProyectosMobile').typeIt({
              strings: ["<proyectosWeb>", "programación"],
              speed: 50,
              breakLines: false,
