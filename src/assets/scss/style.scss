@@ -49,8 +49,8 @@ body{
       background: $pink-color;
     }
   }.azulDos{
-    margin-top:-11.9vh;
-    margin-left:-1.9vh;
+    margin-top:-12vh;
+    margin-left:-2.1vh;
     background: none;
     // background: #8FC2CE;
     border: 1vh solid$blueTwo-color;
@@ -346,9 +346,18 @@ body{
     margin-left: 2vh;
   }#tarjetaCuatro{
     width: 96.5%;
-  }#tituloProyectosWeb{
+  }#tarjetaCinco{
+    width: 94.5%;
+    margin-left: 3.5vh;
+    margin-top: -15vh;
+    }
+  #tarjetaSeis{
+    width:94%;
+    margin-top: -2vh;
+  }
+  #tituloProyectosWeb{
     margin-left: 12vh;
-    margin-top: -10vh;
+    margin-top: -1vh;
     color:$white-color;
   }.produccion{
     width: 50%;
@@ -417,6 +426,9 @@ body{
     padding:2vh;
   }.camaraResponsive{
     width:103.5%;
+  }.tarjetaResponsive{
+    width: 94%;
+    margin-left: 1.5vh;
   }
 }
 #produccionAudiovisual{
